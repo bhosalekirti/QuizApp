@@ -100,7 +100,7 @@ subBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `<h2> You answerd correctly ${score}/${quizData.length} qusions.</h2>`;
+      quiz.innerHTML = `<h2> You answerd correctly ${score}/${quizData.length} qusions.</h2><button  onClick="window.location.reload()"  class="btnSub">Go Back To Quiz</button>`;
     }
   }
 });
